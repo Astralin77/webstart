@@ -1,5 +1,8 @@
+* 
+    box-sizing: border-box
+
 body 
-    font-family: sans-serif
+    font-family: 'Museo Sans Light'
 img
     max-width: 100%    
 .container
@@ -19,3 +22,24 @@ button
     background-color: $main-color
     border: none
     padding: 18px 30px
+    font-weight: 700
+    font-size: 16px
+    &:hover
+        background-color: lighten($main-color, 10%)
+        cursor: pointer
+.section
+    padding: 90px 0    
+    &-title
+        font-size: 24px
+        font-weight: 700
+        line-height: 35px
+    &-subtitle
+        font-size: 16px
+        font-weight: 300
+
+.input
+    border: 1px solid $border-input    
+    padding: 20px 26px
+    font-size: 15px
+    border-radius: 10px
+        
