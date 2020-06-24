@@ -14,6 +14,8 @@ $('h2').click(function(){
     console.log('Ты кликнул по заголовку!');
 });
 
+
+
 $(document).ready(function(){
     $('.slider').slick({
         slidesToShow: 3,
