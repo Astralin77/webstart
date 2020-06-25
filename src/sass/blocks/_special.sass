@@ -1,0 +1,69 @@
+.special
+    text-align: center
+    &__title
+        display: block
+        max-width: 655px
+        margin: 0 auto 60px
+    &__subtitle
+        display: block
+        font-size: 20px
+        font-weight: 100
+        margin-bottom: 80px    
+    &-inner
+        display: flex
+        justify-content: space-between    
+        flex-wrap:wrap
+        
+        &__item
+            min-width: 160px
+            padding-right: 75px 
+            position: relative
+            &:last-child
+                padding-right: 0
+                &::after
+                    display: none
+            &::after
+                content: " "
+                position: absolute
+                background-image: url(../img/special/spec-arrow.png) 
+                width: 72px
+                height: 25px
+                top: 0
+                right: 0
+        &__icon
+            padding: 30px
+            border: 2px solid $main-color    
+            border-radius: 50%
+        &__text
+            font-size: 14px
+            font-weight: 300
+            line-height: 20px
+            margin-top: 25px    
+    
+
+@media(max-width: 870px)
+    .special-inner
+        flex-direction: column
+        &__item
+            padding-right: 0
+            margin-bottom: 30px
+            &::after
+                display: none
+        &__text
+            max-width: 300px
+            margin: 25px auto 15px 
+@media(max-width: 450px)  
+    .special__title
+        font-size: 18px
+        line-height: 26px
+        margin-bottom: 24px
+    .special__subtitle
+        font-size: 14px     
+        margin-bottom: 30px            
+    .special-inner
+        &__item
+            max-width: 150px
+            justify-content: center
+            margin: 0px auto 30px
+        &__text
+            font-size: 12px    
