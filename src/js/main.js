@@ -14,7 +14,16 @@ $('h2').click(function(){
     console.log('Ты кликнул по заголовку!');
 });
 
-
+$('#brif-form').validate({
+  rules: {
+    username: "required",
+    phone: "required",
+  },
+  messages: {
+    username: "Укажите имя",
+    phone: "Нам нужен ваш телефон",
+  }
+});
 
 $(document).ready(function(){
     $('.slider').slick({
